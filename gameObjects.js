@@ -123,7 +123,10 @@ AFRAME.registerComponent("boxes", {
         depth: this.data.depth,
       });
 
-      box.setAttribute("gltf-model","#obstacle");
+      box.setAttribute("material", {
+        src: "./images/boxtexture1.jpg",
+        repeat: "1 1 1",
+      });
 
       box.setAttribute("static-body", {});
 
